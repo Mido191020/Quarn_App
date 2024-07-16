@@ -41,26 +41,50 @@ The directory structure for the project is as follows:
 
 ```
 Quran_App/
+├── bin/
+│   └── ... (bin scripts)
 ├── controllers/
 │   ├── quranController.js
 │   ├── juzController.js
 │   ├── surahsController.js
-│   └── ayahController.js
+│   ├── ayahController.js
+│   └── ... (other controllers)
+├── models/
+│   └── ... (models)
+├── node_modules/
+│   └── ... (node modules)
+├── public/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── ... (other public assets)
 ├── routes/
 │   ├── index.js
 │   ├── quranRoutes.js
 │   ├── juzRoutes.js
 │   ├── surahsRoutes.js
-│   └── ayahRoutes.js
+│   ├── ayahRoutes.js
+│   └── ... (other routes)
+├── src/
+│   └── ... (source files)
 ├── views/
 │   ├── layout.pug
 │   ├── index.pug
-│   └── ...
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── app.js
+│   └── ... (other views)
+├── .gitignore
+├── app.js
+├── combined.log
+├── config.env
+├── convertCsvToJson.js
+├── db.js
+├── error.log
+├── importData.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.js
+└── The Quran Dataset.json
+
 ```
 
 ### How to Run
