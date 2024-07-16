@@ -1,0 +1,33 @@
+.split-screen {
+    display: flex;
+    height: 100vh;
+}
+
+.left-pane,
+.right-pane {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.left-pane {
+    background-color: #f0f0f0;
+}
+
+.right-pane {
+    background-color: #ffffff;
+}
+
+.ayah {
+    margin-bottom: 20px;
+}
+
+.ayah-number {
+    font-weight: bold;
+    color: #555;
+}
+
+.ayah-text,
+.ayah-translation {
+    font-size: 18px;
+}

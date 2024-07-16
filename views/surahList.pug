@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 Surah List
+  ul
+    each surah in surahs
+      li
+        a(href=`/quran/surah/${surah.number}`) #{surah.englishName} - #{surah.englishNameTranslation}

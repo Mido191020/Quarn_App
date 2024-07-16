@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 #{surah.englishName} - #{surah.englishNameTranslation}
+  .split-screen
+    .left-pane
+      each ayah in ayahs
+        .ayah
+          span.ayah-number #{ayah.numberInSurah}:
+          span.ayah-text #{ayah.text}
+    .right-pane
+      each ayah in ayahs
+        .ayah
+          span.ayah-number #{ayah.numberInSurah}:
+          span.ayah-translation #{ayah.translation}
