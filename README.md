@@ -7,6 +7,11 @@ Here's the updated README with the new features and project structure:
 ## Project Overview
 The Quran_App is a project aimed at providing a seamless and respectful digital experience for exploring the holy book of Islam. Whether you're a scholar, student, or simply seeking spiritual guidance, our app offers the tools you need for your journey.
 
+
+## Screenshot
+![Quran_App Screenshot](https://github.com/Mido191020/Quarn_App/blob/main/Screenshot%202024-07-19%20075652.png)
+
+
 ## Features
 
 ### Completed Tasks
