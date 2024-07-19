@@ -1,0 +1,49 @@
+- .gitignore
+- app.js
+- bin
+  - www
+- combined.log
+- config.env
+- controllers
+  - AyahController.js
+  - bookmarkController.js
+  - juzController.js
+  - surahController.js
+- convertCsvToJson.js
+- error.log
+- importData.js
+- middlewares
+  - logger.js
+- models
+  - ayahModels.js
+  - bookmarkModels.js
+  - JuzModels.js
+  - surahModels.js
+- package-lock.json
+- package.json
+- public
+  - images
+  - javascripts
+    - bookmark.js
+  - stylesheets
+    - output.css
+    - style.css
+- README.md
+- routes
+  - Ayahs.js
+  - Bookmarks.js
+  - home.js
+  - juz.js
+  - Surahs.js
+- src
+  - input.css
+- tailwind.config.js
+- The Quran Dataset.json
+- views
+  - ayah.pug
+  - error.pug
+  - index.pug
+  - layout.pug
+  - search.pug
+  - surahDetail.pug
+  - surahList.pug
