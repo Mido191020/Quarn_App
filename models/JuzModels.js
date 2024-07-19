@@ -11,6 +11,7 @@ const juzSchema = new mongoose.Schema({
       ayah_no: Number,
     },
   ],
+  ayahs: [{ type: mongoose.Schema.Types.ObjectId, ref: "Ayah" }],
 });
 
-const Juz = mongoose.model("Juz", juzSchema);
+module.exports = mongoose.model("Juz", juzSchema);

@@ -1,0 +1,28 @@
+form(action="/search" method="GET")
+  input(type="text" name="keyword" placeholder="Search keyword")
+  select(name="searchType")
+    option(value="arabic") Arabic
+    option(value="english") English
+  select(name="filterType")
+    option(value="") No filter
+    option(value="surah") Surah
+    option(value="juz") Juz
+  input(type="number" name="filterValue" placeholder="Filter value")
+  button(type="submit") Search
+
+// Display results
+if results
+  each result in results
+    div.ayah
+      p.arabic= result.ayah_ar
+      p.english= result.ayah_en
+      p.meta Surah: #{result.surah_name_en} (#{result.surah_no}), Ayah: #{result.ayah_no_surah}
+
+// Pagination
+if pagination
+  div.pagination
+    if pagination.page > 1
+      a(href=`?page=${pagination.page - 1}`) Previous
+    span Page #{pagination.page} of #{pagination.pages}
+    if pagination.page < pagination.pages
+      a(href=`?page=${pagination.page + 1}`) Next

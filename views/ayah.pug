@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Quran App
+    link(rel="stylesheet", href="/public/css/styles.css")
+  body
+    h1 Surah #{surahNumber}
+    each ayah in ayahs
+      .ayah
+        p #{ayah.text}
+        button(onclick=`addBookmark(${surahNumber}, ${ayah.number})`) Add Bookmark
+        button(onclick=`removeBookmark(${ayah.bookmarkId})`) Remove Bookmark
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script(src="/public/js/bookmark.js")

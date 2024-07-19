@@ -1,14 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  h1 Welcome BOY
-  br
-  a(href='/quran') Go to Quran API
-  br
-  a(href='/juz') Go to juz page 
-  br
-  a(href='/surahs') Go to surahs page 
-  br
-  a(href='/ayah') Go to ayah page 
+  .container
+    h1.main-title= title
+    h2.welcome-message Welcome to the Quran App
+    
+    .navigation-links
+      .nav-item
+        a.nav-link(href='/surahs') Browse Surahs
+      .nav-item
+        a.nav-link(href='/juz') Browse Juz
+      .nav-item
+        a.nav-link(href='/ayah') Browse Ayahs
+      .nav-item
+        a.nav-link(href='/bookmarks') Your Bookmarks
+    
+    .search-section
+      h3 Search the Quran
+      include search
 
+    .about-section
+      h3 About This App
+      p This Quran application allows you to explore the holy Quran, search for specific verses, and manage your bookmarks. Use the navigation links above to get started, or use the search function to find specific content.

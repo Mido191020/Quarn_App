@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const ayahSchema = new mongoose.Schema({
   ayah_no_quran: {
     type: Number,
@@ -44,4 +45,6 @@ const ayahSchema = new mongoose.Schema({
   },
   words_list: [{ type: String }],
 });
+ayahSchema.index({ text_ar: "text", text_en: "text" });
+
 module.exports = mongoose.model("Ayah", ayahSchema);
