@@ -1,33 +1,102 @@
-.split-screen {
-    display: flex;
-    height: 100vh;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
 }
 
-.left-pane,
-.right-pane {
-    flex: 1;
-    overflow-y: auto;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     padding: 20px;
 }
 
-.left-pane {
-    background-color: #f0f0f0;
+.main-title {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.right-pane {
-    background-color: #ffffff;
+.welcome-message {
+    color: #34495e;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: block;
+    background: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #2980b9;
+}
+
+.search-section,
+.about-section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h3,
+.about-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+form input,
+form select,
+form button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #27ae60;
 }
 
 .ayah {
-    margin-bottom: 20px;
-}
-
-.ayah-number {
-    font-weight: bold;
-    color: #555;
-}
-
-.ayah-text,
-.ayah-translation {
-    font-size: 18px;
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
